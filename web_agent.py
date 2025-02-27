@@ -109,7 +109,7 @@ async def main() -> None:
         workflow.add_step("generate_output", generate_output)
 
         # Execute the workflow
-        result = await workflow.run(State(input="What is the demon core?"))
+        result = await workflow.run(State(input="Can you recommend fiction books to read, genre science fictio, list them in your answer"))
 
         print("\n*********************")
         print("Input: ", result.state.input)
